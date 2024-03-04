@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<center>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+   
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+           
+            
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color:green;
+            color: yellow;
+        
+            padding-left: 400px;
+          
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+           flex-wrap: wrap;
+        }
+
+        .navbar a:hover {
+            background-color:black;
+            color: yellow;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:green;
+            width:150px;
+          
+           
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 15px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+ 
+.dropbtn:hover{
+color:yellow;
+background-color: black;
+}
+
+
+ 
+        .dropdown-content a:hover {
+            background-color: red;
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+         
+        }
+    </style>
+
+
+</style>
+<body>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <div class="dropdown">
+        <div class="dropbtn">Products
+          
+        </div>
+        <div class="dropdown-content">
+            <a href="#">Engineering</a>
+            <a href="#"> Telecom</a>
+            <a href="#">Energy</a>
+            <a href="#">finance</a>
+            <a href="#">consultancy</a>
+        </div>
+    </div>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</div>
+</center>
+</html>

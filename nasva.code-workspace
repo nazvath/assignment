@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../nasva"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "nasva"
+	}
+}

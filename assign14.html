@@ -1,0 +1,217 @@
+
+
+ <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .web {
+            background-color: rgb(54, 51, 51);
+            color: yellowgreen;
+            padding-left: 8%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-bottom-color: chartreuse;
+        }
+        .page {
+            margin-top: 1%;
+        }
+        .button {
+            margin-left: 50%;
+        }
+        .hi {
+            display: inline-flex;
+            width: 100px;
+            background-color: rgb(179, 177, 177);
+            box-decoration-break: clone; 
+            align-items: center;
+            height: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .hi:hover {
+            background-color: chartreuse;
+            color: beige;
+        }
+        .image, img {
+            margin: 20px;
+            padding: 20px;
+            width: 90%;
+            height: 300px;
+            /* justify-content: center; */
+            margin-left: 48px;
+        }
+        img {
+            border: 4px solid rgb(225, 220, 220);
+            /* align-self: center; */
+        }
+        .heading {
+            padding-top: 5%;
+            padding-left: 9%;
+        }
+        .para {
+            padding-left: 9%;
+            float: left; 
+            width: 50%;
+        }
+        .box {
+            background-color: #f0f0f0;
+            width: 200px;
+            height: 250px;
+            position: relative;
+            margin-left: 70%;
+            border: 1px solid #ccc;
+            margin-top: 2%;
+            padding: 8px;
+            border-radius: 9%;
+        }
+        .para2 {
+            color: rgb(29, 29, 215);
+            margin-left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            clear: both;
+            font-size: medium;
+            text-decoration: none;
+        }
+        .list {
+            padding-left: 9%;
+            font-family: Arial, Helvetica, sans-serif;
+            clear: both;
+            font-size: medium;
+            text-decoration: none;
+        }
+        .lis {
+            padding-left: 1.3%;
+            font-family: Arial, Helvetica, sans-serif;
+            clear: both;
+            font-size: medium;
+            text-decoration: none; 
+        }
+        .box1 {
+            background-color: #f0f0f0;
+            width: 200px;
+            height: 170px; 
+            margin-left: 70%;
+            border: 1px solid #ccc;
+            margin-top: 0.5%;
+            padding: 10px;
+            border-radius: 9%;
+        }
+        .search {
+            background-color: #f0f0f0;
+            width: 200px;
+            height: 100px; 
+            margin-left: 70%;
+            border: 1px solid #ccc;
+            margin-top: 1px;
+            padding: 10px;
+            border-radius: 9%;
+        }
+        .last {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            height: 100px;
+        }
+
+        .last a {
+            color: yellow;
+            text-decoration: none;
+            margin-left: 15px; /* Adjust spacing between links */
+            text-align: center;
+        }
+
+        .last a:hover {
+            text-decoration: underline;
+        }
+      
+    </style>
+<body>
+    <div class="web">
+        <h1>Website</h1>
+        <p class="page">Motive of your website</p>
+        <div class="button">
+            <button class="hi">Home </button>
+            <button class="hi">About us </button>
+            <button class="hi">A page </button>
+            <button class="hi">Another page </button>
+            <button class="hi">Contact us</button>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdiOjMObc9L94z1yo-g9kOgZMM6jV6DCyeA&usqp=CAU" alt="">
+    </div>
+
+    <div class="heading">
+         <h3>Welcome to the website</h3>
+   
+    
+    </div>
+    
+
+    <div class="para">
+       
+            <p>
+                A website (also written as a web site) is a collection of web pages and related content <br> that is identified by a common domain name and published on at least one web server. <br><br><br> Websites are typically dedicated to a particular topic or purpose, such as news, education, <br> commerce, entertainment or social networking. Hyperlinking between web pages guides the <br><br><br> navigation of the site, which often starts with a home page. As of May 2023, the top 5 most <br> visited websites are Google Search, YouTube, Facebook, Twitter, and Instagram.
+            </p>
+    </div>
+
+    <div class="box">
+        <div class="side-box-content">
+            <h3>Latest News</h3>
+            <h5 style="color: blue;">SOME TEXT GOES HERE</h5>
+            <h6>Some text goes here</h6>
+            <p>You can put any content here, such as text, images, or forms.</p>
+            <p><a href="#" style="margin: 25%;">Read more</a></p>
+        </div>
+    </div>
+
+    <div>
+        <h5 class="para2" style="margin-left: 9%;"> Some Highlights </h5>
+        <div class="list"> 
+            <ul class="lis" style="list-style-type: square">
+                <li>some text here</li>
+                <li>some text here</li>
+                <li>some text here</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box1">
+        <div class="side-box-content">
+            <h3>useful Links</h3>
+        <ul>
+            <li><a href=""> Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+            <li><a href="">Link 4</a></li>
+        </ul>
+    </div>
+    </div>
+<br>
+    <div class="search">
+        <h4>Search</h4>
+        <input type="text">
+    </div>
+
+    <div class="last">
+       <a href="" style="color: yellow;" class="a"> Home |</a> 
+       <a href="" style="color: yellow;" class="a">Examples |</a>
+       <a href="" style="color: yellow;"class="a">A page |</a>
+       <a href="" style="color: yellow;"class="a">Another Page |</a>
+       <a href="" style="color: yellow;"class="a">Contact us</a>
+    </div>
+
+</body>
+ </html> 
+
+
+ 
