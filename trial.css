@@ -1,0 +1,25 @@
+
+*{
+  box-sizing: border-box;
+  
+}
+
+
+.dropdown-item:hover{
+    background-color: black;
+    color:beige
+}
+
+.navbar-brand  {
+    font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  }
+  .social{
+margin-left: 70%;
+
+  }
+.w3-col {
+
+    margin-left: 200px;
+}

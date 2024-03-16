@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="fact">
+    <button onclick="fac()"> factorial </button>
+    <p id="demo"></p>
+    <script>
+function fac()
+   {
+let text=1;
+let n= document.getElementById("fact").value;
+let string="";
+let i;
+
+
+for( i=1; i<=n; i++)
+{
+ text=text*i;
+
+string= "factorial of"  + i + "=" + text + "<br>"  };
+
+document.getElementById("demo").innerHTML=string;
+ }
+
+ </script>
+</body>
+</html>

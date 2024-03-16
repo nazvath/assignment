@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <input type="text" id="num1">
+    <button onclick="dis()"> check </button>
+
+    <script>
+   function dis(){
+   let text = "";
+   let num = Number(document.getElementById("num1").value);
+
+            if (num <= 1) {
+                text = "Not a prime number";
+            } else if (num === 2 |  num === 3) {
+                text = "Prime number";
+            } else if (num % 2 === 0 | num % 3 === 0) {
+                text = "Not a prime number";
+            } else {
+                text = "Prime number";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        }
+   
+   
+
+   </script>
+</body>
+</html>

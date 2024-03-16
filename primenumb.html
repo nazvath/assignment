@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+<p id="demo"></p>
+
+ <script>
+        var primes = "";
+        for (var i = 2; i <= 100; i++) {
+            var isPrime = true; 
+            for (var j = 2; j < i; j++) {
+                if (i % j === 0) {
+                    isPrime = false; 
+                    break;
+                }
+            }
+            if (isPrime) {
+                primes += i + "<br>"; 
+            }
+        }
+        document.getElementById("demo").innerHTML = "Prime numbers up to 100: <br> " + primes;
+    </script>
+    
+    </body>
+    </html>
+        
+
+        
+        
+     
+        </script>
+   
+
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Programs</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+
+let ar=[60,30,40,50]
+ar.reverse()
+document.getElementById("demo").innerHTML=ar
+
+    </script>
+
+
+<script>
+
+let array=[12,23,45,30]
+var largest=array[0]
+for(i=0;i<=largest;i++)
+if(array[i]>largest){
+largest=array[i]
+}
+document.getElementById("demo1").innerHTML=largest
+
+let array1=[70,34,56,78,65]
+array1.sort()
+
+document.getElementById("demo2").innerHTML=array1
+
+
+let array2=[70,34,56,78,65]
+array2.sort().reverse();
+document.getElementById("demo3").innerHTML=array2
+
+</script>
+
+
+
+</body>
+</html>

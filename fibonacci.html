@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<p id="demo"></p>
+    <script>
+        var num1 = 0;
+        var num2 = 1;
+        var num;
+    
+        document.getElementById("demo").innerHTML += num1 + "<br>";
+        document.getElementById("demo").innerHTML += num2 + "<br>";
+    
+        for (var i = 1; i <= 10; i++) {
+            num = num1 + num2;
+            document.getElementById("demo").innerHTML += num + "<br>";
+            num1 = num2;
+            num2 = num;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    Name: <input type="text" id="demo" style="margin-left: 5%;" onkeyup="clearmsg('sp1')"> 
+    <span id="sp1" style="color: red;"></span><br><br>
+    Mobile: <input type="text" id="demo1" style="margin-left: 5%" pattern="[0-9]{10}" onkeyup="clearmsg('sp2')">
+    <span id="sp2" style="color: red;"></span> <br> <br>
+    password: <input type="password" id="demo2"style="margin-left: 3%;" maxlength="6" minlength="6" onkeyup="clearmsg('sp3')">
+    <span id="sp3" style="color: red;"></span> <br><br>
+    Email:    <input type= "text" id="demo3"style="margin-left: 5%;" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" onkeyup="clearmsg('sp4')">
+    <span id="sp4" style="color: red;"></span><br><br>
+    Address: <textarea name="" id="demo4" cols="30" rows="10" style="margin-left: 4%;" onkeyup="clearmsg('sp5')"></textarea>
+    <span id="sp5" style="color: red;"></span> <br><br>
+    <button type="submit" onclick="return validate()">Submit</button>
+</form>
+<script>
+
+function validate(){
+ var Name=document.getElementById("demo").value;
+ var Mobile=document.getElementById("demo1").value;
+var password=document.getElementById("demo2").value;
+var Email=document.getElementById("demo3").value;
+var Address=document.getElementById("demo4").value;
+
+
+
+if(Name==""){
+    document.getElementById("sp1").innerHTML="Entername*";
+    return false;
+}
+if(Mobile==""){
+    document.getElementById("sp2").innerHTML="Enter Number*"
+}
+if(password==""){
+    document.getElementById("sp3").innerHTML="Enter password*"
+    return false;
+}
+if(Email==""){
+    document.getElementById("sp4").innerHTML="Enter email*"
+    return false;
+
+}
+if(Address==""){
+    document.getElementById("sp5").innerHTML="Enter address*"
+    return false;
+}
+
+}
+function clearmsg(sp){
+    document.getElementById(sp).innerHTML="";
+}
+
+    </script>
+</body>
+</html>
