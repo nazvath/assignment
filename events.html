@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="window.alert('page loaded successfully');">
+    <h2>Type something</h2>
+    focus<input type="text" id="foc" onfocus="FocusEvent()"/> <br> <br>
+keydown<input type="text" id="key" onkeydown="keydownevent()"/> <br><br>
+keyup <input type="text" id="up"  onkeyup="keyup()"/><br><br>
+Enter Name <input type="text" id="blur" onfocus="focusevent()" onblur="blurfunction()"/>
+
+<h1 id="mouse" onmouseover="mouseover()" onmouseout="mouseout()">Mouse</h1> <br><br><br>
+
+
+
+</body>
+
+
+<script>
+function FocusEvent()
+{
+document.getElementById("foc").style.backgroundColor="red"
+}
+
+function keydownevent()
+{
+alert("key pressed")
+}
+function keyup()
+{
+var x=document.getElementById("up");
+x.value=x.value.toUpperCase();
+}
+function focusevent(){
+
+    document.getElementById("blur").style.backgroundColor="green"
+
+}
+function blurfunction(){
+
+    document.getElementById("blur").style.backgroundColor="blue"
+
+}
+function mouseover(){
+ document.getElementById("mouse").style.color="maroon"
+
+}
+function mouseout()
+{
+    document.getElementById("mouse").style.color="black"
+}
+
+</script>
+
+</html>
