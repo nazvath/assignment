@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let promise=new Promise(function(resolve,reject){
+setTimeout(function(){
+resolve('promise resolved')},6000)
+});
+
+async function asyncfun(){
+try{
+    let result=await promise;
+    console.log(result)
+}
+catch(error){
+    conssole.log('error')
+}
+    
+}
+
+asyncfun();
+
+
+
+
+    </script>
+</body>
+</html>
